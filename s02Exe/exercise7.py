@@ -3,7 +3,7 @@
 number = float(input('Digite um número: '))
 
 numberDouble = (number*2)
-numberCubed = (number**3)
+numberCubed  = (number**3)
 numberScared = (number**2)
 
 print('Dobro do número digitado:',numberDouble)
