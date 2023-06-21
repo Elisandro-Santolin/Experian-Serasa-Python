@@ -1,9 +1,9 @@
 # 6. Faça um programa que peça o nome e a idade do usuário e que ao final informe o ano de nascimento da pessoa.
 
+name = str(input('Digite seu nome: '))
+age  = int(input('Digite sua idade: '))
+currentYear = 2023
 
-name =  (input('Digite seu nome:'))
-age = int(input('Digite sua idade: '))
+birth = (currentYear - age)
 
-birth = (2023 - age)
-
-print('Nome informado,',name,'ano de nascimento',birth)
+print('Nome informado',name,'e o ano de nascimento é',birth)
