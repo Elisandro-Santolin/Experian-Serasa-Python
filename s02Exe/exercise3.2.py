@@ -2,4 +2,4 @@
 
 number = (input('Digite o último número da sequência: '))
 
-while():
+# while():
