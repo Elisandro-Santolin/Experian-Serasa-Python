@@ -9,3 +9,23 @@
 # senha_correta = '123456'
 # senha_digita = input('Insira sua senha: ')
 # tentativas = 3
+
+attempts = 3 
+
+while(attempts > 0):
+    passwordValid = '123456'
+    entryPassword = (input('Digite a sua senha: '))
+
+    if(entryPassword == passwordValid):
+            print('Olá! Seja bem-vindo ao banco!')
+            break
+    elif(entryPassword != passwordValid and attempts == 3):
+            print('Senha incorreta! Você ainda tem 2 tentativas.')
+            attempts = attempts -1
+    elif(entryPassword != passwordValid and attempts == 2):
+            print('Senha incorreta! Você ainda tem 1 tentativas.')
+            attempts = attempts -1
+    elif(entryPassword != passwordValid and attempts == 1):
+            print('Sua senha foi bloquada! Por favor, dirija-se a agência.')
+            attempts = attempts -1
+            break
