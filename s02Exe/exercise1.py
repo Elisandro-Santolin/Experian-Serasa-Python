@@ -3,4 +3,4 @@
 height = float(input('Digite sua altura: '))
 converter = (height * 100)
 
-print('Sua altura em metros, convertida é',converter,'centimetros.')
+print(f'Sua altura em metros, convertida é {converter:.2f} centimetros.')

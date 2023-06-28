@@ -3,19 +3,19 @@
 number1 = float(input('Digite um valor: '))
 number2 = float(input('Digite outro valor: '))
 
-operation = (input('Digite a operação '))
+operation = (input('Digite a operação desejada'))
 
 if(operation == '+'):
     sum = (number1+number2)
-    print('O resultado da soma é:',sum)
+    print(f'O resultado da soma é:{sum:.1f}')
 elif(operation == '-'):
     subtraction = (number1-number2)
-    print('O resultado da subtração é:',subtraction)
+    print(f'O resultado da subtração é:{subtraction:.1f}')
 elif(operation == '*'):
     multiplication = (number1*number2)
-    print('O resultado da multiplicão é:',multiplication)
+    print(f'O resultado da multiplicão é:{multiplication:.1f}')
 elif(operation == '/'):
     division = (number1/number2)
-    print('O resultado da divisão é:',division)
+    print(f'O resultado da divisão é:{division:.1f}')
 else:
     print('Opção não localizada!')

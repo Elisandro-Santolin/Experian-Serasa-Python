@@ -12,4 +12,4 @@ bonusTotality = (salesQuantity*bonus)
 
 paymentTotality = (payment+commission+bonusTotality)
 
-print('O total do salário é:',paymentTotality)
+print(f'O total do salário é:{paymentTotality:.2f}')

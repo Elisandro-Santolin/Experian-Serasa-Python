@@ -6,5 +6,5 @@ percent = float(input('Digite a porcentagem de aumento: '))
 wage = (payment*percent)
 totalWage=(payment+wage)
 
-print('O valor do salário com o aumento é:',totalWage)
+print(f'O valor do salário com o aumento é:{totalWage:.2f}')
 

@@ -1,9 +1,8 @@
-# 3. Construa um programa que calcule a área de um triângulo.
-# Area_Triangulo = (Base*Altura)/2
+# 3. Construa um programa que calcule a área de um triângulo. # Area_Triangulo = (Base*Altura)/2
 
-base = 3
-height = 56
+base   = input(('Digite a base do triângulo: '))
+height = input(('Digite a altura do triângulo: '))
 
 triangleArea = ((base*height)/2)
 
-print('A área do triângulo é:',triangleArea)
+print(f'A área do triângulo é:{triangleArea:.2f}')

@@ -6,6 +6,6 @@ numberDouble = (number*2)
 numberCubed  = (number**3)
 numberScared = (number**2)
 
-print('Dobro do número digitado:',numberDouble)
-print('Número digitado ao cubo:',numberCubed)
+print('Dobro do número digitado:'   ,numberDouble)
+print('Número digitado ao cubo:'    ,numberCubed)
 print('Número digitado ao quadrado:',numberScared)
