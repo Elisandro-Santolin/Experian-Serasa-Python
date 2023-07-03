@@ -1,0 +1,1 @@
+# 6. Escreva um programa que receba um texto e uma palavra, então verifique se a palavra está no texto..
