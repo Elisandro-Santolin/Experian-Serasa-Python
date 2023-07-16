@@ -5,6 +5,7 @@ def options():
     2. Listar Fornecedores
     3. Procurar dados Fornecedor
     4. Deletar Fornecedor
+    0. Sair      
     ''')
 
 def main():
@@ -38,7 +39,7 @@ def display(supplier):
 
 
 def search(supplier):
-    identifier_search = input('Id? ')
+    identifier_search = int(input('Informe ID: '))
     for supplier in supplier:
         identifier, name, phone, mail = supplier
         if (identifier == identifier_search):
@@ -48,7 +49,7 @@ def search(supplier):
         print(f'{identifier_search} não localizado')
 
 def delete(supplier):
-    delete_search = input('Id? ')
+    delete_search = int(input('Informe ID: '))
     for supplier in supplier:
         identifier, name, phone, mail = supplier
         if (identifier == delete_search):
