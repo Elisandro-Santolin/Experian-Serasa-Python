@@ -1,12 +1,12 @@
 def options():
     print('''Escolha uma opção:
 
-    1. Cadastrar Fornecedor
-    2. Listar Fornecedores
-    3. Procurar dados Fornecedor
-    4. Deletar Fornecedor
-    0. Sair      
-    ''')
+            1. Cadastrar Fornecedor
+            2. Listar Fornecedores
+            3. Procurar dados Fornecedor
+            4. Deletar Fornecedor
+            0. Sair      
+            ''')
 
 def main():
     supplier = []
@@ -22,6 +22,8 @@ def main():
             search(supplier)
         elif (option == 4 and len(supplier) != 0):
             delete(supplier)
+        elif (option == 0):
+            break
         else:
             print('Opção inválida')
 
@@ -36,7 +38,6 @@ def display(supplier):
     for supplier in supplier:
         identifier, name, phone, mail = supplier
         print(f'id: {identifier}, nome: {name}, telefone: {phone}, email: {mail}')
-
 
 def search(supplier):
     identifier_search = int(input('Informe ID: '))
@@ -53,11 +54,9 @@ def delete(supplier):
     for supplier in supplier:
         identifier, name, phone, mail = supplier
         if (identifier == delete_search):
-            print(f'id: {identifier}, nome: {name}, telefone: {phone}, email: {mail}')
-            break
+            print
     else:
         print(f'{delete_search} não localizado')
-
 main()
 
 
