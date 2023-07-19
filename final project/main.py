@@ -28,7 +28,7 @@ def main():
             print('Opção inválida')
 
 def registration(supllier):
-    identifier = int(input('Informe ID: '))
+    identifier = int((input('Informe ID: ')))
     name  = (input('Informe Nome: '))
     phone = (input('Informe Telefone: '))
     mail  = (input('Informe E-mail:  '))
@@ -50,13 +50,17 @@ def search(supplier):
         print(f'{identifier_search} não localizado')
 
 def delete(supplier):
-    delete_search = int(input('Informe ID: '))
+    delete = int(str(input('Informe ID: ')))
     for supplier in supplier:
         identifier, name, phone, mail = supplier
-        if (identifier == delete_search):
+        if (identifier == delete):
+            identifier.pop(delete)
+            name.pop(delete)
+            phone.pop(delete)
+            mail.pop(delete)
             print
     else:
-        print(f'{delete_search} não localizado')
+        print(f'{delete} não localizado')
 main()
 
 
